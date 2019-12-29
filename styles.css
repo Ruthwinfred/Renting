@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(226, 131, 43);
+}
+
+p {
+    color: purple;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.top-nav {
+    background-color: darkorange;
+    padding: 4px 28px;
+}
+
+.top-nav li {
+    display: inline;
+    padding-left: 15px;
+}
+
+.col-1 {
+    width: 8.33%
+}
+
+.col-2 {
+    width: 16.66%
+}
+
+.col-3 {
+    width: 25%
+}
+
+.col-4 {
+    width: 33.33%
+}
+
+.col-5 {
+    width: 41.66%
+}
+
+.col-6 {
+    width: 50%
+}
+
+.col-7 {
+    width: 58.33%
+}
+
+.col-8 {
+    width: 66.66%
+}
+
+.col-9 {
+    width: 75%
+}
+
+.col-10 {
+    width: 83.33%
+}
+
+.col-11 {
+    width: 91.66%
+}
+
+.col-12 {
+    width: 100%
+}
+
+.home-para p {
+    color: white;
+    font-size: 1.5vw;
+}
+
+#h1 {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+#h {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+#l{
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+
+#h3 {
+    color: white;
+}
+
+#ol {
+    color: white;
+}
+#bod{
+    background-image: url(images/hme.jpg);
+}
+#b{
+    background-color: transparent;
+}
+#p{
+    color: gold;
+}
+
+.size {
+    height: 360px;
+}
+
+.form {
+    color: white;
+}
+
+
+/*Common style end here*/
+
+
+/*Contact form style start here*/
+
+.contact-form1 input[type=text],
+input[type=email] {
+    margin-left: 10%;
+}
+
+
+/*Contact form style end here*/
+
+
+/*media queries that make text and images stack on smaller screen*/
+
+@media only screen and (max-width: 768px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+    .home-para p {
+        color: green;
+    }
+    #h1 {
+        color: green;
+    }
+    #h3 {
+        color: green;
+    }
+    #h {
+        color: green;
+    }
+    #ol {
+        color: green;
+    }
+    #l{
+        color: green;
+        font-size: 15px;
+    }
+}
+
+
+/*media queries end here*/
